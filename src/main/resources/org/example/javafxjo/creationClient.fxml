@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxjo.HelloController">
+   <children>
+      <Pane layoutX="38.0" layoutY="25.0" prefHeight="546.0" prefWidth="805.0">
+         <children>
+            <TextField fx:id="nom" layoutX="300.0" layoutY="163.0" prefHeight="25.0" prefWidth="205.0" />
+            <TextField fx:id="prenom" layoutX="298.0" layoutY="197.0" prefHeight="25.0" prefWidth="205.0" />
+            <TextField fx:id="emailPart" layoutX="298.0" layoutY="233.0" prefHeight="25.0" prefWidth="205.0" />
+            <TextField fx:id="passwordPart" layoutX="300.0" layoutY="273.0" prefHeight="25.0" prefWidth="205.0" />
+            <TextField fx:id="numTelPart" layoutX="298.0" layoutY="317.0" prefHeight="25.0" prefWidth="205.0" />
+            <Label layoutX="223.0" layoutY="49.0" prefHeight="35.0" prefWidth="359.0" text="Création d'un compte particulier">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="167.0" prefHeight="17.0" prefWidth="38.0" text="Nom" />
+            <Label layoutX="241.0" layoutY="201.0" prefHeight="17.0" prefWidth="44.0" text="Prénom" />
+            <Label layoutX="244.0" layoutY="237.0" prefHeight="17.0" prefWidth="44.0" text="E-mail" />
+            <Label layoutX="168.0" layoutY="321.0" prefHeight="17.0" prefWidth="120.0" text="Numéro de téléphone" />
+            <Label layoutX="217.0" layoutY="277.0" prefHeight="17.0" prefWidth="75.0" text="Mot de passe" />
+            <Button fx:id="created" layoutX="342.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleCreateAccount" prefHeight="25.0" prefWidth="110.0" text="Crée un compte" />
+            <Label layoutX="159.0" layoutY="445.0" prefHeight="17.0" prefWidth="160.0" text="Vous n'avez déjà un compte" />
+            <Button fx:id="connected" layoutX="319.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleChangeView2" prefHeight="25.0" prefWidth="110.0" text="Se connecter" />
+            <Button fx:id="accountPro" layoutX="319.0" layoutY="485.0" mnemonicParsing="false" text="Créer un compte professionnelle" onAction="#handleChangeView3" />
+            <Label layoutX="40.0" layoutY="489.0" prefHeight="17.0" prefWidth="272.0" text="Vous voulez créer  un compte en professionnelle" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
